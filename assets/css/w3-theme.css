@@ -1,0 +1,196 @@
+:root {
+  --primary: #008cff;
+  --primary-light: #e0f3ff;
+  --secondary: #75808a;
+  --success: #4CAF50;
+  --danger: #f44336;
+  --info: #2196F3;
+  --warning: #ff9800;
+  --dark: #343a40;
+  --light: #eff0f1;
+  --link: coral;
+  --link-hover: #006bc3;
+  --gray: #9e9e9e;
+  --white: #fff;
+  --black: #222;
+  --yellow: #fec20f;
+  --border-color: #ddd;
+  --input-border-color: #ccc;
+  --theme: var(--white);
+}
+
+/* h1, h2, h3, h4, h5, h6 {margin:8px 0;} */
+p { margin:12px 0; }
+hr { margin:16px 0; }
+a { color:var(--primary) }
+a:hover { color:var(--link-hover) }
+
+/* W3CSS Adjustments */
+.w3-small { font-size: 13px!important; }
+.w3-input { padding: 8px 12px; }
+.w3-check, .w3-radio { width: 16px; height: 16px; top: 3px; }
+.w3-card { box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .08) }
+.w3-padding-large { padding: 12px 16px!important; }
+/* .w3-xbordered {  } */
+.w3-table td { padding-top: 12px; padding-bottom: 12px; }
+hr,
+.w3-border-top,
+.w3-border-bottom,
+.w3-border-left,
+.w3-border-right,
+.w3-table-all {
+  border-color:var(--border-color)!important;
+}
+.w3-input.w3-border { border:1px solid var(--input-border-color) !important; }
+.w3-border { border:1px solid var(--border-color) !important; }
+.w3-bordered tr, .w3-table-all tr { border-bottom: 1px solid var(--border-color) !important; }
+select.w3-input:focus,
+select.w3-select:focus,
+textarea.w3-input:focus,
+input.w3-input:focus {
+  outline: none;
+  border-color: #4D90FE;
+  box-shadow: 0px 0px 2px var(--primary);
+  border-color: var(--primary) !important;
+}
+select.w3-input {
+  min-height: 40px;
+}
+select.w3-input:disabled {
+  color: #333 !important;
+  background-color: #e9e9e9 !important;
+  border: 1px solid #b3b3b3!important;
+}
+
+.w3-overlay-light, .w3-overlay-lighter, .w3-overlay-dark, .w3-overlay-darker { position: relative; z-index: 0; }
+.w3-overlay-light:after,
+.w3-overlay-lighter:after,
+.w3-overlay-dark:after,
+.w3-overlay-darker:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.w3-overlay-dark:after { background: rgba(0, 0, 0, .25) }
+.w3-overlay-darker:after { background: rgba(0, 0, 0, .5) }
+.w3-overlay-lighter:after { background: rgba(255, 255, 255, .5) }
+.w3-overlay-light:after { background: rgba(255, 255, 255, .25) }
+
+/* .w3-small { font-size: 13px!important; } */
+.w3-button.w3-small { padding: 4px 8px; }
+/* .w3-button.w3-large { padding: 12px 24px; } */
+
+.w3-button { box-shadow: inset 10vw 10vw rgba(0,0,0,0)!important; transition: box-shadow .35s, background .35s; }
+.w3-button:hover { background-color:transparent!important }
+
+.w3-text-theme, .w3-text-theme:hover, .w3-hover-text-theme:hover {color:var(--theme)!important}
+.w3-text-primary, .w3-text-primary:hover, .w3-hover-text-primary:hover {color:var(--primary)!important}
+.w3-text-secondary, .w3-text-secondary:hover, .w3-hover-text-secondary:hover {color:var(--secondary)!important}
+.w3-text-white, .w3-text-white:hover, .w3-hover-text-white:hover {color:var(--white)!important}
+.w3-text-black, .w3-text-black:hover, .w3-hover-text-black:hover {color:var(--black)!important}
+.w3-text-gray, .w3-text-gray:hover, .w3-hover-text-gray:hover {color:var(--gray)!important}
+.w3-text-light, .w3-text-light:hover, .w3-hover-text-light:hover {color:var(--light)!important}
+.w3-text-dark, .w3-text-dark:hover, .w3-hover-text-dark:hover {color:var(--dark)!important}
+.w3-text-link, .w3-text-link:hover, .w3-hover-text-link:hover {}
+.w3-text-info, .w3-text-info:hover, .w3-hover-text-info:hover, .w3-text-blue, .w3-text-blue:hover, .w3-hover-text-green:hover {color:var(--info)!important}
+.w3-text-success, .w3-text-success:hover, .w3-hover-text-success:hover, .w3-text-green, .w3-text-green:hover, .w3-hover-text-green:hover {color:var(--success)!important}
+.w3-text-warning, .w3-text-warning:hover, .w3-hover-text-warning:hover, .w3-text-orange, .w3-text-orange:hover, .w3-hover-text-orange:hover {color:var(--warning)!important}
+.w3-text-danger, .w3-text-danger:hover, .w3-hover-text-danger:hover, .w3-text-red, .w3-text-red:hover, .w3-hover-text-red:hover {color:var(--danger)!important}
+
+.w3-theme, .w3-theme:hover, .w3-hover-theme:hover { color:var(--black)!important;background-color:var(--theme)!important }
+.w3-primary, .w3-primary:hover, .w3-hover-primary:hover { color:var(--white)!important;background-color:var(--primary)!important }
+.w3-secondary, .w3-secondary:hover, .w3-hover-secondary:hover { color:var(--white)!important;background-color:var(--secondary)!important }
+.w3-white, .w3-white:hover, .w3-hover-white:hover {color:var(--black)!important;background-color:var(--white)!important}
+.w3-black, .w3-black:hover, .w3-hover-black:hover {color:var(--white)!important;background-color:var(--black)!important}
+.w3-gray, .w3-gray:hover, .w3-hover-gray:hover {color:var(--black)!important;background-color:var(--gray)!important}
+.w3-light, .w3-light:hover, .w3-hover-light:hover { color:var(--black)!important;background-color:var(--light)!important }
+.w3-dark, .w3-dark:hover, .w3-hover-dark:hover { color:var(--white)!important;background-color:var(--dark)!important }
+.w3-link, .w3-link:hover, .w3-hover-link:hover {}
+.w3-info, .w3-info:hover, .w3-hover-info:hover, .w3-blue, .w3-blue:hover, .w3-hover-blue:hover {color:var(--white)!important;background-color:var(--info)!important}
+.w3-success, .w3-success:hover, .w3-hover-success:hover, .w3-green, .w3-green:hover, .w3-hover-green:hover {color:var(--white)!important;background-color:var(--success)!important}
+.w3-warning, .w3-warning:hover, .w3-hover-warning:hover, .w3-orange, .w3-orange:hover, .w3-hover-orange:hover {color:var(--black)!important;background-color:var(--warning)!important}
+.w3-danger, .w3-danger:hover, .w3-hover-danger:hover, .w3-red, .w3-red:hover, .w3-hover-red:hover {color:var(--white)!important;background-color:var(--danger)!important}
+.w3-yellow, .w3-yellow:hover, .w3-hover-yellow:hover {color:var(--black)!important;background-color:var(--yellow)!important}
+
+.w3-border-theme, .w3-border-theme:hover, .w3-hover-border-theme { border-color:var(--theme)!important }
+.w3-border-primary, .w3-border-primary:hover, .w3-hover-border-primary { border-color:var(--primary)!important }
+.w3-border-secondary, .w3-border-secondary:hover, .w3-hover-border-secondary { border-color:var(--secondary)!important }
+.w3-border-white, .w3-border-white:hover, .w3-hover-border-white:hover {border-color:var(--white)!important}
+.w3-border-black, .w3-border-black:hover, .w3-hover-border-black:hover {border-color:var(--black)!important}
+.w3-border-gray, .w3-border-gray:hover, .w3-hover-border-gray:hover {border-color:var(--gray)!important}
+.w3-border-light, .w3-border-light:hover, .w3-hover-border-light:hover { border-color:var(--light)!important }
+.w3-border-dark, .w3-border-dark:hover, .w3-border-gray-hover-dark { border-color:var(--dark)!important }
+.w3-border-link, .w3-border-link:hover, .w3-hover-border-link:hover {}
+.w3-border-info, .w3-border-info:hover, .w3-hover-border-info:hover, .w3-border-blue, .w3-border-blue:hover, .w3-hover-border-green:hover {border-color:var(--info)!important}
+.w3-border-success, .w3-border-success:hover, .w3-hover-border-success:hover, .w3-border-green, .w3-border-green:hover, .w3-hover-border-green:hover {border-color:var(--success)!important}
+.w3-border-warning, .w3-border-warning:hover, .w3-hover-border-warning:hover, .w3-border-orange, .w3-border-orange:hover, .w3-hover-border-orange:hover {border-color:var(--warning)!important}
+.w3-border-danger, .w3-border-danger:hover, .w3-hover-border-danger:hover, .w3-border-red, .w3-border-red:hover, .w3-hover-border-red:hover {border-color:var(--danger)!important}
+
+.w3-button.w3-theme:hover,
+.w3-button.w3-primary:hover,
+.w3-button.w3-secondary:hover,
+.w3-button.w3-white:hover,
+.w3-button.w3-black:hover,
+.w3-button.w3-gray:hover,
+.w3-button.w3-light:hover,
+.w3-button.w3-dark:hover,
+/* .w3-button.w3-link:hover, */
+.w3-button.w3-info:hover,
+.w3-button.w3-blue:hover,
+.w3-button.w3-success:hover,
+.w3-button.w3-green:hover,
+.w3-button.w3-warning:hover,
+.w3-button.w3-orange:hover,
+.w3-button.w3-danger:hover,
+.w3-button.w3-yellow:hover,
+.w3-button.w3-red:hover { box-shadow: inset 10vw 10vw rgba(0,0,0,.15)!important; }
+
+/* Tables */
+.w3-bordered tr:last-of-type {border-bottom:0;}
+
+/* New Classes */
+/* .w3-link { display: inline-block; text-decoration: none; }
+.w3-link:hover { text-decoration: underline; } */
+.w3-underline { text-decoration: underline; }
+.w3-flex { display:flex; flex-wrap: wrap; }
+.w3-flex-bar { display:flex; align-items: center }
+/* .w3-flex-wrap { flex-wrap: wrap; } */
+.w3-flex-bar .w3-right { margin-left: auto }
+.w3-space-around { justify-content: space-around; }
+.w3-space-between { justify-content: space-between; }
+.w3-grow { flex-grow: 1 }
+.w3-crop { overflow:hidden }
+.w3-spaced-items-small > * { margin: 2px!important; display: inline-block;}
+.w3-spaced-items > * { margin: 4px!important; display: inline-block;}
+.w3-uppercase { text-transform: uppercase; }
+.w3-bold { font-weight: 500; }
+.w3-bolder { font-weight: 600; }
+.w3-show-inline { display: inline; }
+.w3-tag { padding: 2px 8px!important }
+
+/* Toggle */
+.w3-toggle,
+.w3-toggle + * { display: none!important; }
+.w3-toggle:checked + * { display: block!important; }
+
+/* Tabs */
+.w3-tabs { display: flex; flex-grow: 1; flex-wrap: wrap; }
+.w3-tabs > label { flex-grow: 1 }
+.w3-tab-panel, .w3-tab-control { display: none; }
+.w3-tab-content { display: block; width: 100%; }
+.w3-tabs input.w3-tab-control:first-child:checked ~ .w3-tab-content .w3-tab-panel:nth-child(1),
+.w3-tabs input.w3-tab-control:nth-child(3):checked ~ .w3-tab-content .w3-tab-panel:nth-child(2),
+.w3-tabs input.w3-tab-control:nth-child(5):checked ~ .w3-tab-content .w3-tab-panel:nth-child(3),
+.w3-tabs input.w3-tab-control:nth-child(7):checked ~ .w3-tab-content .w3-tab-panel:nth-child(4),
+.w3-tabs input.w3-tab-control:nth-child(9):checked ~ .w3-tab-content .w3-tab-panel:nth-child(5),
+.w3-tabs input.w3-tab-control:nth-child(11):checked ~ .w3-tab-content .w3-tab-panel:nth-child(6) {
+  display: block!important;
+}
+.w3-tabs input.w3-tab-control:checked + label .w3-button {
+  color: var(--primary)!important;
+  border-bottom-width: 4px!important;
+}
