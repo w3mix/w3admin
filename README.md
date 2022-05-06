@@ -4,7 +4,7 @@ W3Admin is a fully responsive W3.CSS admin dashboard template. It is built with 
 
 ## Demo:
 
-https://w3mix.com/demos/w3admin
+https://w3mix.github.io/w3admin/
 
 ## Sources and Credits:
 
