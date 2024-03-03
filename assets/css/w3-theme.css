@@ -194,3 +194,12 @@ select.w3-input:disabled {
   color: var(--primary)!important;
   border-bottom-width: 4px!important;
 }
+.w3-flex-bar .h-top .admin-logo {
+  width: 150px;
+  float: left;
+  overflow: hidden;
+}
+.w3-flex-bar .h-top label {
+  float: right;
+  width: 50px;
+}
